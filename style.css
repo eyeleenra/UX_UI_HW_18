@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: 'DM Serif Display', sans-serif;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: 'Manrope', serif;
+}
+.mySkills {
+    padding: 20px;
+    text-align: center;
+}
+.mySkills h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.flexContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.skill {
+    padding: 20px 40px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-style: solid;
+    text-align: left;
+}
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.skill p {
+    font-size: 18px;
+}
+.skill:nth-child(1) {
+    border-radius: 10px 10px 70px 10px;
+}
+.skill:nth-child(2) {
+    border-radius: 10px 10px 10px 70px;
+}
+.skill:nth-child(3) {
+    border-radius: 10px 70px 10px 10px;
+}
+.skill:nth-child(4) {
+    border-radius: 70px 10px 10px 10px;
+}
+.toolsUsed {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Manrope', serif;
+}
+.toolsUsed strong{
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'DM Serif Display', sans-serif;
+    padding-right: 40px;
+}
+.workGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.workItem {
+    flex: 0 0 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+.workItem img {
+    max-width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.workItem h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.workItem p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600){
+    .mySkills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skillItem {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .workItem {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
